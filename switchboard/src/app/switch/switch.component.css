@@ -1,0 +1,22 @@
+.OFF{
+    background-color: red;
+    color: white;
+}
+
+.ON{
+    background-color: green;
+    color: white;
+}
+
+div{
+    display: inline-block;
+    padding: 10px;
+    background-color: brown;
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px #888888;
+    
+}
+button{
+    font-size: 1.2em;
+    box-shadow: 2px 2px 1px #888888;
+}
