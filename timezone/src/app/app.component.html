@@ -1,0 +1,9 @@
+<div>
+  <h1>US Time Zone Display</h1>
+  <button type="button" value="PST" (click) = clickMe($event) [ngClass]= "{'selected': state.pst}">PST</button>
+  <button type="button" value="EST" (click) = clickMe($event) [ngClass]= "{'selected': state.est}">EST</button>
+  <button type="button" value="MST" (click) = clickMe($event) [ngClass]= "{'selected': state.mst}">MST</button>
+  <button type="button" value="CST" (click) = clickMe($event) [ngClass]= "{'selected': state.cst}">CST</button>
+  <button type="button" value = "clear" (click) = clickMe($event)>Clear</button>
+  <p *ngIf ="currentTime">{{currentTime}}</p>
+</div>
