@@ -1,0 +1,30 @@
+<h1>Registration</h1>
+<form (submit)="onSubmit()">
+  <fieldset>
+    <legend>Account Information</legend>
+<input type="text" name = "firstName" id="firstName" required [(ngModel)] = 'user.firstName' #firstName = 'ngModel' minlength="4">
+<label for="firstName">*First Name</label><br>
+<input type="text" name="lastName" id="lastName"  required [(ngModel)] = 'user.lastName' #lastName = 'ngModel' minlength="4">
+<label for="lastName">*Last Name</label><br>
+<input type="text" name="email" id="email" required  [(ngModel)] = 'user.email' #email = 'ngModel'>
+<label for="email">*Email</label><br>
+<input type="password" name="password" id="password" required minlength="16"  [(ngModel)] = 'user.password' #password = 'ngModel'>
+<label for="password">*Password</label><br>
+<input type="text" name="cpassword" id="cpassword" required  [(ngModel)] = 'user.cpassword' #cpassword = 'ngModel'>
+<label for="cpassword">*Confirm Password</label><br>
+<input type="text" name="street" id="street" required  [(ngModel)] = 'user.street' #street = 'ngModel' minlength="10">
+<label for="street">*Street Address</label><br>
+<input type="text" name="unit" id="unit" [(ngModel)] = 'user.unit' #unit = 'ngModel'>
+<label for="unit">Unit/Apt#</label><br>
+<input type="text" name="city" id="city" required [(ngModel)] = 'user.city' #city = 'ngModel' minlength="4">
+<label for="city">*City</label><br>
+<select name="state" id="state" required [(ngModel)] = 'user.state' #state = 'ngModel'>
+  <option value="New York">New York</option>
+  <option value="Seattle">Seattle</option>
+  <option value="Delware">Delaware</option>
+  <option value="Boston">Boston</option>
+</select>
+<label for="state">*State</label><br>
+</fieldset>
+<input type="submit" name="register" value="Register">
+</form>
