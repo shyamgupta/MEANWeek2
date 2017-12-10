@@ -11,12 +11,12 @@
 <script>
     var button = document.getElementById("clickme");
     button.addEventListener("click",showName);
-    function getdata(){
+    function showName(){
+        getData().then((data)=> button.innerHTML=data.name)
+    }
+    function getData(){
         return new Promise(function(resolve,reject){
             resolve($.get("https://api.github.com/users/shyamgupta"))
-        })
-        getdata().then(function showName(data){
-                button.innerHTML = data.name;
         })
     }
 
