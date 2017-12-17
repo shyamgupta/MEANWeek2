@@ -18,7 +18,7 @@ app.get('/',function(req,res){
     let color = "";
     if(req.session.random){
         if(parseInt(req.session.random) === parseInt(req.session.guess)){
-            message = "Success!";
+            message = `${req.session.guess} was the number!`;
             color = "success"
             console.log(message);
         }
@@ -27,7 +27,7 @@ app.get('/',function(req,res){
             color = "failure";
         }
         else{
-            req.session.guess==null? message=null:message="Too High"
+            req.session.guess==null? message=null:message= "Too High!"
             color = "failure";
         }
         console.log(`Random Number: ${req.session.random}, User Guess: ${req.session.guess},${message}`);

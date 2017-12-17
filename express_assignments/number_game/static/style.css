@@ -13,8 +13,8 @@ body{
 
 
 div{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 2px solid black;
     margin: 0 auto;
 }
@@ -39,6 +39,15 @@ input[type="submit"]{
     margin: 10px auto;
     font-size: medium;
 
+}
+
+input[type="text"]{
+    margin: 10px auto;
+    box-shadow: 2px 2px;
+    font-size: medium;
+    text-align: center;
+    background-color: blue;
+    color: white;
 }
 
 [value="Restart"]{

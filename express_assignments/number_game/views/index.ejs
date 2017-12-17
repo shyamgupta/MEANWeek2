@@ -12,7 +12,7 @@
     <p>I am thinking of a number between 1 and 100</p>
     <p>Take a guess!</p>
     <form action="/guess" method="post">
-        <input type="text" name="guess"><br>
+        <input type="text" name="guess" placeholder="Type here"><br>
         <% if(random && guess) {%> 
         <div class="<%= color %>">
         <p><%= message %>  </p>
