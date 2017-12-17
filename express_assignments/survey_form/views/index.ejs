@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Express Assignment: Survey Form</h1>
+    <form action="/result" method="post">
+        <input type="text" name="username" id="username">
+        <label for="username">Your Name</label><br>
+        <select name="location" id="location">
+            <option value="Mountain View">Mountain View</option>
+            <option value="Seattle">Seattle</option>
+            <option value="New York">New York</option>
+            <option value="Boston">Boston</option>
+        </select>
+        <label for="location">Dojo Location</label><br>
+        <select name="language" id="language">
+            <option value="Java">Java</option>
+            <option value="JavScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+        </select>
+        <label for="language">Favorite Language</label><br>
+        <label for="comment">Comment</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
